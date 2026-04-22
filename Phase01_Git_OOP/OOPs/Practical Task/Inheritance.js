@@ -6,6 +6,10 @@ class Vehicle {
         this.year = year;
     }
 
+    describe(){
+        console.log('Describing your vehicle.....');
+    }
+
 }
 
 // CREATING SUB CHILD CLASS NAMED CAR OF PARENT CLASS VEHICLE
@@ -14,7 +18,7 @@ class Car extends Vehicle {
         super(make,model,year); // BINDING THE PARENTS CLASS CONSTRUCTOR
         this.numberOfDoors = numberOfDoors;
     }
-    showDetails() {
+    describe() {
         console.log('-------------------------------------');
         console.log(`Vehicle Make: ${this.make}`);
         console.log(`Vehicle Model: ${this.model}`);
@@ -30,7 +34,7 @@ class Bike extends Vehicle {
         super(make,model,year); // BINDING THE PARENTS CLASS CONSTRUCTOR
         this.hasSideCar = hasSideCar;
     }
-    showDetails() {
+    describe() {
         console.log('-------------------------------------');
         console.log(`Vehicle Make: ${this.make}`);
         console.log(`Vehicle Model: ${this.model}`);
@@ -45,5 +49,5 @@ const car1 = new Car("Toyota", "Corolla", 2022, 4);
 const bike1 = new Bike("Harley", "Street 750", 2021, true);
 
 // CALLING METHOD OF EACH OBJECT
-car1.showDetails();
-bike1.showDetails();
+car1.describe();
+bike1.describe();
