@@ -45,5 +45,5 @@ const creditUser = new CreditCardProcessor("Rahul", "1234-5678-9012");
 const upiUser = new UPIProcessor("Amit", "amit@upi");
 
 // CALLING METHODS (WITHOUT KNOWING INTERNAL LOGIC)
-creditUser.processPayment(2000);
-upiUser.processPayment(500);
+creditUser.processPayment(1800);
+upiUser.processPayment(260);
